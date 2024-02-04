@@ -1,12 +1,19 @@
-
-</br>
-
 # Overview
 ```
-This is a quick setup script to aid in installing/configuring important tools for vulnerability research and exploitation. 
+This is a quick setup script to aid in installing/configuring important tools for 
+vulnerability research and exploitation. 
 
-I built this since I ssh into my homelab to use these tools (I hate GUIs) and I wanted to have a quick setup script to get everything installed and configured in the case I need to rebuild my environment. 
+I built this since I ssh into my homelab to use these tools (I hate GUIs) and I wanted 
+to have a quick setup script to get everything installed and configured in the case 
+I need to rebuild my environment. 
 ```
+</br>
+
+# Layout For PWBDBG
+<a href="https://github.com/abaker2010/gdb-quick-setup">
+    <img src="./images/running_image.png" alt="gdb-quick-setup">
+</a>
+
 </br>
 
 # Tools Installed
@@ -20,6 +27,8 @@ I built this since I ssh into my homelab to use these tools (I hate GUIs) and I 
 - tmux
 - r2ghidra 
 - radare2
+- vim 
+- neovim
 ```
 
 </br>
@@ -46,7 +55,8 @@ chmod +x setup.sh
 
 # Coffee Break ☕ 
 ```
-This will take a while to get everything installed and configured. A few of the tools are built from source, this helps to ensure compatibility with each system this is used on. 
+This will take a while to get everything installed and configured. A few of the tools are 
+built from source, this helps to ensure compatibility with each system this is used on. 
 
 Should take about 10-15 minutes to complete. 
 ```
@@ -58,7 +68,9 @@ Should take about 10-15 minutes to complete.
 Preparing Terminal
 ------------------
 
-Due to some of add-ons that were installed to work with splitting the terminal, you will need to use the following TMUX command before running PWNDBG. This will create a new tmux session called "pwndbg_session" and then you can run gdb with pwndbg. 
+Due to some of add-ons that were installed to work with splitting the terminal, you will 
+need to use the following TMUX command before running PWNDBG. This will create a new
+tmux session called "pwndbg_session" and then you can run gdb with pwndbg. 
 
     Command
     -------
@@ -69,17 +81,10 @@ Due to some of add-ons that were installed to work with splitting the terminal, 
 Running PWNDBG
 --------------
 
-To run pwndbg, its pretty much the same command as plain GDB simply run the following command:
+To run pwndbg run the following command:
 
     Command
     -------
-        pwndbg <binary>
+
+        gdb-pwndbg <binary>
 ```
-
-</br>
-
-# PWNDBG Example
-
-<a href="https://github.com/abaker2010/gdb-quick-setup">
-    <img src="./images/running_image.png" alt="gdb-quick-setup">
-</a>
