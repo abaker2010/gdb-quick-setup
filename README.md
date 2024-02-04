@@ -3,7 +3,7 @@
 
 # Overview
 ```
-This is a quick setup script to aid in installing/configuring important tools for vulnerability research and exploitation.   gdb with Pwndbg, GEF, Peda, Tmux, Ghidra, and Radare2. 
+This is a quick setup script to aid in installing/configuring important tools for vulnerability research and exploitation. 
 
 I built this since I ssh into my homelab to use these tools (I hate GUIs) and I wanted to have a quick setup script to get everything installed and configured in the case I need to rebuild my environment. 
 ```
